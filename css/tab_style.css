@@ -1,0 +1,41 @@
+.nav {
+    border-bottom: 2px solid #ccc;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.nav-item {
+    text-align: center;
+}
+.nav a {
+    color: #000;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    padding: .4rem;
+}
+.nav-link.active {
+    background-color: #ddd;
+    max-width: 100%;
+}
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+.tab-content.active {
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        grid-template-columns: auto;
+    }
+
+    #nSet, #nSet1, #nSet2, #rSet1, #rSet2 {
+        margin-top: 5px;
+    }
+}
